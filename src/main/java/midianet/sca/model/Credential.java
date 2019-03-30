@@ -3,7 +3,7 @@ package midianet.sca.model;
 import lombok.Data;
 
 @Data
-public class Login {
+public class Credential {
     private String username;
     private String password;
 }

@@ -2,12 +2,9 @@ package midianet.sca.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-import org.springframework.data.domain.Auditable;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.time.temporal.TemporalAccessor;
-import java.util.Optional;
 import java.util.Set;
 
 @Data
@@ -27,7 +24,7 @@ public class User {
 
     @NotNull
     @JsonIgnore
-    @Column(length = 20 , nullable = false)
+    @Column(length = 80, nullable = false)
     private String password;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

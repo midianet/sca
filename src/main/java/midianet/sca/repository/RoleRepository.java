@@ -1,4 +1,8 @@
 package midianet.sca.repository;
 
-public class RoleRepository {
+import midianet.sca.model.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoleRepository extends JpaRepository<Role, Long> {
+
 }

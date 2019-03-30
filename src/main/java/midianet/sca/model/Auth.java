@@ -5,6 +5,6 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class AuthToken {
+public class Auth {
     private String token;
 }
